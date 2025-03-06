@@ -11,7 +11,7 @@ import "./models/donations.model.js";
 */
 
 const main = async () => {
-  const PORT = process.env.SERVER_PORT || 4000;
+  const PORT = process.env.PORT || 4000;
   try {
     await sequelize.sync({ force: false });
     app.listen(PORT, () => {
